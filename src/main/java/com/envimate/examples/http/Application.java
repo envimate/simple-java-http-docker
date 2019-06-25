@@ -17,7 +17,7 @@ public final class Application {
             final String dateFormatted = time.format(DateTimeFormatter.ISO_TIME);
 
             response.setStatus(200);
-            response.setBody("time now is " + dateFormatted);
+            response.setBody("current time is " + dateFormatted);
         };
 
         final HttpMate httpMate = anHttpMateConfiguredAs(LOW_LEVEL)
